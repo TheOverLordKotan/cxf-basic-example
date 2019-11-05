@@ -121,3 +121,160 @@
 	</build>
 
 </project>
+		<!--  
+		<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itc.integracion.swift.occidente.axis</groupId>
+	<artifactId>SwiftOccidenteClientesAxis</artifactId>
+	<version>1.0.0</version>
+	<name>SwiftOccidenteClientesAxis</name>
+	
+	
+	<!-- GENERADOR CLIENTE AXIS ServiceProcesadorSwiftMT101Retiros SOA
+	<properties>
+		<axis2.version>1.6.0</axis2.version>
+		<wsdl.servicio>src/main/resources/ServiceProcesadorSwiftMT101Retiros.wsdl</wsdl.servicio>
+		<wsdl.package>com.itc.integracion.swift.occidente.axis.retiros.mt101</wsdl.package>
+		<wsdl.outputDirectory>src/main/java</wsdl.outputDirectory>
+	</properties>
+	
+
+	
+	<!-- GENERADOR CLIENTE AXIS ServiceNotificadorSwift SOA 
+	<properties>
+		<axis2.version>1.6.0</axis2.version>
+		<wsdl.servicio>src/main/resources/ServiceNotificadorSwift.wsdl</wsdl.servicio>
+		<wsdl.package>com.itc.integracion.swift.occidente.axis.notificaciones</wsdl.package>
+		<wsdl.outputDirectory>src/main/java</wsdl.outputDirectory>
+	</properties>
+	
+
+	
+	
+	<!-- GENERADOR CLIENTE AXIS ServiceProcesadorSwiftMT940Movimientos SOA 
+	<properties>
+		<axis2.version>1.6.0</axis2.version>
+		<wsdl.servicio>src/main/resources/ServiceProcesadorSwiftMT940Movimientos.wsdl</wsdl.servicio>
+		<wsdl.package>com.itc.integracion.swift.occidente.axis.movimientos.mt940</wsdl.package>
+		<wsdl.outputDirectory>src/main/java</wsdl.outputDirectory>
+	</properties>
+		
+	
+		<!-- GENERADOR CLIENTE AXIS ServiceProcesadorSwiftMT940RecepcionValores SOA 
+	<properties>
+		<axis2.version>1.6.0</axis2.version>
+		<wsdl.servicio>src/main/resources/ServiceProcesadorSwiftMT540RecepcionValores.wsdl</wsdl.servicio>
+		<wsdl.package>com.itc.integracion.swift.occidente.axis.recepcionvalores.mt540</wsdl.package>
+		<wsdl.outputDirectory>src/main/java</wsdl.outputDirectory>
+	</properties>
+-->
+	<!-- GENERADOR CLIENTE AXIS ServiceProcesadorSwiftMT940RecepcionValores SOA 
+	<properties>
+		<axis2.version>1.6.0</axis2.version>
+		<wsdl.servicio>src/main/resources/ServiceProcesadorSwiftMT195RechazosWS.wsdl</wsdl.servicio>
+		<wsdl.package>com.itc.integracion.swift.occidente.axis.rechazos.mt195</wsdl.package>
+		<wsdl.outputDirectory>src/main/java</wsdl.outputDirectory>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.axis2/axis2-transport-http 
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-transport-http</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-kernel</artifactId>
+			<version>${axis2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-transport-local</artifactId>
+			<version>${axis2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-adb</artifactId>
+			<version>${axis2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.axis2</groupId>
+										<artifactId>
+											axis2-wsdl2code-maven-plugin
+										</artifactId>
+										<versionRange>[1.6,)</versionRange>
+										<goals>
+											<goal>wsdl2code</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<!-- https://mvnrepository.com/artifact/org.apache.axis2/axis2-wsdl2code-maven-plugin 
+				<groupId>org.apache.axis2</groupId>
+				<artifactId>axis2-wsdl2code-maven-plugin</artifactId>
+				<version>1.6.0</version>
+
+				<configuration>
+					<wsdlFile>${wsdl.servicio}</wsdlFile>
+					<databindingName>adb</databindingName>
+					<packageName>${wsdl.package}</packageName>
+					<flattenFiles>true</flattenFiles>
+					<outputDirectory>${wsdl.outputDirectory}</outputDirectory>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>javax.activation</groupId>
+						<artifactId>activation</artifactId>
+						<version>1.1</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>wsdl2code</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+		
+		
+		 --> 

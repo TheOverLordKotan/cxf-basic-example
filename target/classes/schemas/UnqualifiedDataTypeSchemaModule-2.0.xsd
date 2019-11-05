@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== -->
+<!-- ===== ADA Unqualified Data Type Schema Module ===== -->
+<!-- ====================================================================== -->
+<!-- Module of integration sales force ITC SIFI Data Type Agency: ADA Version: 
+	1.1, rev. A Last change: 16 February 2019 -->
+<xsd:schema
+	targetNamespace="org:itc:salesforce:sifi:data:specification:UnqualifiedDataTypesSchemaModule:2"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:ccts="org:itc:salesforce:sifi:documentation:2"
+	attributeFormDefault="unqualified">
+	<!-- ===== Imports ===== -->
+
+	<xsd:simpleType name="NamesType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CityType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	
+		<xsd:simpleType name="AdressType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+		<xsd:simpleType name="PhoneType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+	<xsd:simpleType name="LongTextType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	
+	<xsd:simpleType name="TwoValuesType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>CRM1064</ccts:UniqueID>
+				<ccts:CategoryCode>CRM</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Principal values in String</ccts:Definition>
+				<ccts:RepresentationTermName>LordKotan</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!-- ===== Primary RT: Numeric. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="NumericType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA0000014</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Numeric. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>Numeric information that is assigned or is
+					determined by calculation, counting, or sequencing. It does not
+					require a unit of quantity or unit of measure.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Numeric</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>string</ccts:PrimitiveType>
+				<xsd:BuiltinType>decimal</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal" />
+	</xsd:simpleType>
+
+	<!-- ===== Secondary RT: Value. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="ValueType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA0000015</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:DictionaryEntryName>Value. Type</ccts:DictionaryEntryName>
+				<ccts:Definition>Numeric information that is assigned or is
+					determined by calculation, counting, or sequencing. It does not
+					require a unit of quantity or unit of measure.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Value</ccts:RepresentationTermName>
+			    <ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+	
+		<!-- ===== Secondary RT: Value. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="UniqueType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA0000015</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:DictionaryEntryName>Value. Type</ccts:DictionaryEntryName>
+				<ccts:Definition>Numeric information that is assigned or is
+					determined by calculation, counting, or sequencing. It does not
+					require a unit of quantity or unit of measure.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Value</ccts:RepresentationTermName>
+			    <ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+	
+	
+			<!-- ===== Secondary RT: Value. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="TransType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA0000015</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:DictionaryEntryName>Value. Type</ccts:DictionaryEntryName>
+				<ccts:Definition>Numeric information that is assigned or is
+					determined by calculation, counting, or sequencing. It does not
+					require a unit of quantity or unit of measure.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Value</ccts:RepresentationTermName>
+			    <ccts:PrimitiveType>Text</ccts:PrimitiveType>
+				<xsd:BuiltinType>string</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+	
+	<!-- ===== Secondary RT: Time. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="TimeType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA0000010</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Time. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>The instance of time that occurs every day.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Time</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>string</ccts:PrimitiveType>
+				<xsd:BuiltinType>time</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:time" />
+	</xsd:simpleType>
+
+	<!-- ===== Secondary RT: Date. Type ===== maxLength -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="DateType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA000009</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Date. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>One calendar day according the Gregorian calendar.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Date</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>string</ccts:PrimitiveType>
+				<xsd:BuiltinType>date</xsd:BuiltinType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:date" />
+	</xsd:simpleType>
+	<!-- ===== Primary RT: Date Time. Type ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="DateTimeType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>ADA000008</ccts:UniqueID>
+				<ccts:CategoryCode>ADA</ccts:CategoryCode>
+				<ccts:DictionaryEntryName>Date Time. Type</ccts:DictionaryEntryName>
+				<ccts:VersionID>1.0</ccts:VersionID>
+				<ccts:Definition>A particular point in the progression of time
+					together with the relevant supplementary information.
+				</ccts:Definition>
+				<ccts:RepresentationTermName>Date Time</ccts:RepresentationTermName>
+				<ccts:PrimitiveType>string</ccts:PrimitiveType>
+				<xsd:BuiltinType>dateTime</xsd:BuiltinType>
+				<ccts:UsageRule>Can be used for a date and/or time.</ccts:UsageRule>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:dateTime" />
+	</xsd:simpleType>
+
+
+
+</xsd:schema>

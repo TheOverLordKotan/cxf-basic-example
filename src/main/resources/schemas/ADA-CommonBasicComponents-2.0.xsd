@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document Type: CommonBasicComponents Generated On: Tue Oct 03 2:26:38 
+	P3 2006 -->
+<!-- ===== xsd:schema Element With Namespaces Declarations ===== -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="org:itc:salesforce:sifi:xsd:CommonBasicComponents-2"
+	xmlns="org:itc:salesforce:sifi:xsd:CommonBasicComponents-2"
+	xmlns:ccts="org:itc:salesforce:sifi:documentation:2"
+	xmlns:udt="org:itc:salesforce:sifi:data:specification:UnqualifiedDataTypesSchemaModule:2"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="2.0">
+	<!-- ===== Imports ===== -->
+	<xsd:import
+		namespace="org:itc:salesforce:sifi:data:specification:UnqualifiedDataTypesSchemaModule:2"
+		schemaLocation="UnqualifiedDataTypeSchemaModule-2.0.xsd" />
+	<!-- ===== Element Declarations ===== -->
+	<xsd:element name="tipoDocumento" type="TipoDocumentoType" />
+	<xsd:element name="numeroIdentificacion"
+		type="NumeroDocumentoType" />
+	<xsd:element name="digitoVerificacion"
+		type="DigitoVerificacionType" />
+	<xsd:element name="primerApellido"
+		type="PrimerApellidoType" />
+	<xsd:element name="segundoApellido"
+		type="SegundoApellidoType" />
+	<xsd:element name="primerNombre" type="PrimerNombreType" />
+	<xsd:element name="segundoNombre" type="SegundoNombreType" />
+	<xsd:element name="tipoAuxiliar" type="TipoAuxiliarType" />
+	<xsd:element name="tipoPersona" type="TipoPersonaType" />
+	<xsd:element name="clasificacionTributaria"
+		type="ClasificacionTribuType" />
+	<xsd:element name="codigoCiudad" type="CodigoCiudadType" />
+	<xsd:element name="ciudad" type="CiudadType" />
+	<xsd:element name="direccion" type="DireccionType" />
+	<xsd:element name="telefono" type="TelefonoType" />
+
+	<xsd:element name="tipoDireccion" type="TipoDireccionType" />
+	<xsd:element name="direccionPrincipal"
+		type="DireccionPrincipalType" />
+	<xsd:element name="transactionId" type="TransaccionType" />
+
+
+	<xsd:element name="channel" type="ChanelType" />
+	<xsd:element name="host" type="HostType" />
+	<xsd:element name="transactionDateTime"
+		type="TransaccionDataTimeType" />
+	<xsd:element name="officecode" type="OfficeCodeType" />
+
+	<xsd:element name="indicadorJornadaAdicional"
+		type="IndicadorJornadaAdicionalType" />
+	<xsd:element name="indicadorReverso"
+		type="IndicadorReversoType" />
+
+	<xsd:element name="idTransaccionReverso"
+		type="TransaccionType" />
+
+	<xsd:element name="observacionTransaccionReverso"
+		type="ObservacionReversoType" />
+		
+			<xsd:element name="filler"
+		type="FillerType" />
+		
+	<xsd:element name="codActividad" type="CodigoActividadType" />
+	<xsd:element name="direccionCorres" type="DireccionCorrespondenciaType" />
+	<xsd:element name="fechaCreacion" type="CreateDateType" />
+	<xsd:element name="usuarioCreacion" type="UserCreatorType" />
+	<xsd:element name="exceptoContrExp" type="ExceptoContrType" />
+	<xsd:element name="fechaActualizacion"
+		type="UpdateDateType" />
+	<xsd:element name="reteFuente" type="RetefuenteType" />
+	<xsd:element name="numeroDirecciones"
+		type="NumeroDireccionesType" />
+	<xsd:element name="origenRecursos" type="OrigenRecursosType" />
+	<xsd:element name="usuarioModificacion"
+		type="UserUpdateType" />
+	<xsd:element name="fechaModificacion"
+		type="UpdateDateType" />
+	<xsd:element name="segmentoCliente" type="SegmentoClienteType" />
+	<xsd:element name="nombreRepreLegal" type="NombreRepresentateLegalType" />
+	<xsd:element name="sexo" type="SexoType" />
+	<xsd:element name="numeroEscritura" type="NumeroEscrituraType" />
+	<xsd:element name="tipoEmpresa" type="TipoEmpresaType" />
+	<xsd:element name="transactionDate" type="TransactionDateType" /> 
+	<xsd:element name="transactionTime" type="TransactionTimeType" /> 
+	<xsd:element name="codRespuesta" type="CodRespuestaType" />    
+	<xsd:element name="msgRespuesta" type="MsjRespuestaType" />    
+
+	<!-- ===== Type Definitions ===== -->
+	<!-- ===== Basic Business Information Entity Type Definitions ===== -->
+	<xsd:complexType name="PrimerNombreType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="SegundoNombreType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="FillerType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>	
+
+
+
+	<xsd:complexType name="PrimerApellidoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="SegundoApellidoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TipoDocumentoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="ExceptoContrType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="TipoAuxiliarType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TipoDireccionType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="ClasificacionTribuType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="DireccionPrincipalType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+		<xsd:complexType name="NumeroDireccionesType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="DireccionCorrespondenciaType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TwoValuesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="DigitoVerificacionType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TipoPersonaType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="IndicadorJornadaAdicionalType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="IndicadorReversoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="RetefuenteType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:UniqueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="NumeroDocumentoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NumericType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="CodigoCiudadType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NumericType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="CiudadType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:CityType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="DireccionType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:AdressType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TelefonoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:PhoneType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="TransaccionType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="ChanelType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="HostType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TransaccionDataTimeType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:DateTimeType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="OfficeCodeType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="ObservacionReversoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+
+	<xsd:complexType name="TransactionDateType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:DateType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TransactionTimeType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TimeType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="CodRespuestaType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="CodigoActividadType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="UserCreatorType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+
+
+	<xsd:complexType name="UserUpdateType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="SegmentoClienteType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="NombreRepresentateLegalType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:NamesType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="SexoType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="NumeroEscrituraType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="TipoEmpresaType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MsjRespuestaType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="OrigenRecursosType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ValueType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="UpdateDateType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:DateType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="CreateDateType">
+		<xsd:simpleContent>
+			<xsd:extension base="udt:DateType" />
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

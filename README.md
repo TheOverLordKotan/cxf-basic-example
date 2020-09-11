@@ -37,7 +37,7 @@ https://www.getpostman.com/collections/96f537adc695aaf6b865
   git clone https://github.com/TheOverLordKotan/cxf-basic-example.git
   ```
 
--Create a database, locally create the `base_service` database and default user, the example is as follows:
+-Create a database, locally create the `cxf-basic` database and default user, the example is as follows:
 
   ```sql
   CREATE USER'adarchitectureWS'@'%' IDENTIFIED BY "123456";

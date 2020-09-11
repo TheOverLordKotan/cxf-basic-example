@@ -25,6 +25,7 @@ https://www.getpostman.com/collections/96f537adc695aaf6b865
 ## Environmental requirements
 
 -mysql 5.6+
+-JDK 8+
 
 ## Installation and startup steps
 
@@ -33,7 +34,7 @@ https://www.getpostman.com/collections/96f537adc695aaf6b865
 -Pull the current project to the local
 
   ```sh
-  git clone https://github.com/adarchitecture/base-service.git
+  git clone https://github.com/TheOverLordKotan/cxf-basic-example.git
   ```
 
 -Create a database, locally create the `base_service` database and default user, the example is as follows:

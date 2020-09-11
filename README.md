@@ -70,8 +70,7 @@ https://www.getpostman.com/collections/96f537adc695aaf6b865
 	or 
 	mvn clean:install
 	cd target
-	java -jar cxf-basic-example-0.0.1-SNAPSHOT.jar
- or 
+	java -jar app.jar
   ```
   
 ## Update log

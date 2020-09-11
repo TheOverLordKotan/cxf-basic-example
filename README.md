@@ -2,7 +2,7 @@
 
 ## The main function
 
--User orquestation
+-User orchestration
 
 ## Postman 
 -- URL test
